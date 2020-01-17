@@ -1,0 +1,15 @@
+{
+  "name": "resizeserver",
+  "version": "1.0.0",
+  "description": "Node.js server to resize/crop images",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js"
+  },
+  "author": "Mindoo GmbH",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "gm": "^1.23.1"
+  }
+}
