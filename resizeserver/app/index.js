@@ -11,7 +11,7 @@ const tmpImagesDirPathOut = '/tmp/tmpimages';
 const app = express();
 
 const createTmpFile = (fileType) => {
-  const tmpFileName = 'img_' + crypto.randomBytes(4).readUInt32LE(0) + '.' + fileType;
+  const tmpFileName = 'img_' + new Date().getTime() + '_' + crypto.randomBytes(4).readUInt32LE(0) + '.' + fileType;
   const tmpFilePath = tmpImagesDirPathOut + '/' + tmpFileName;
   return tmpFilePath;
 }
