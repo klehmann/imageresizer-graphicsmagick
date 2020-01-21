@@ -105,7 +105,6 @@ app.get('/crop/:width/:height/:filename*', (request, response) => {
 
   gm('/files/' + filename)
     .setFormat(fileType)
-    .gravity('Center')
     .crop(width, height)
     .write(tmpFilePath, (err) => {
       if (err) {
